@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const productGrid = document.getElementById("product-grid");
     const searchBar = document.getElementById("search-bar");
     const categoryFilter = document.getElementById("category-filter");
+    const totalProducts =  document.getElementById("total-products");
+
     let products = [];
   
     // Fetch products from JSON file
@@ -15,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Display products
     function displayProducts(products) {
+      totalProducts.innerHTML = `Total products: ${products.length}`
       productGrid.innerHTML = products
         .map(
           (product) => `
