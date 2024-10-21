@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product-details.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Our Shop</h1>
+        <nav>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://wa.me/your-business-number" target="_blank">WhatsApp</a>
+        </nav>
+    </header>
+
+    <section class="product-details-container-container">
+        <div id="product-details-container">
+            <h1 id="product-name">Product Name</h1>
+            <div class="image-container">
+                <img id="product-image" src="path/to/product-image.jpg" alt="Product Image" style="width: 300px; height: 300px;" onclick="openModal();">
+            </div>
+            <p id="product-price" class="price">Price: PKR 0.00</p>
+            <p id="product-category" class="category">Category: Example</p>
+            <p id="product-description" class="description">This is a detailed description of the product.</p>
+        </div>
+    </section>
+
+    <!-- Modal for displaying the enlarged image -->
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Our Shop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="product-details.js"></script>
+</body>
+</html>
