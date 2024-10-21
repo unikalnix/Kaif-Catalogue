@@ -5,7 +5,6 @@ window.onload = function () {
     if (product) {
         // If product details exist, render them
         document.getElementById('product-name').textContent = product.name;
-        document.getElementById('product-price').textContent = `Price: PKR ${product.price}`;
         document.getElementById('product-category').textContent = `Category: ${product.category}`;
         document.getElementById('product-description').textContent = product.description;
         document.getElementById('product-image').src = product.image;
